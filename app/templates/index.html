@@ -1,0 +1,370 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 hero-content">
+                <h1 class="display-4 fw-bold mb-4">
+                    Unversidad del Valle de Bolivia <span class="text-warning">Profesional</span>
+                </h1>
+                <p class="lead mb-4">
+                    Esta es una pagina de prueba para la materia de Desarrollo de Aplicaciones Web.
+                    El objetivo es crear una pagina web para la gestion de canchas de tenis.
+                </p>
+                <div class="d-flex flex-wrap gap-3">
+                    <a href="#features" class="btn btn-light btn-lg">
+                        <i class="fas fa-play me-2"></i>Ver Demo
+                    </a>
+                    <a href="#api" class="btn btn-outline-light btn-lg">
+                        <i class="fas fa-code me-2"></i>Explorar API
+                    </a>
+                </div>
+                <div class="mt-4">
+                    <small class="text-light opacity-75">
+                        <i class="fas fa-check me-2"></i>Prueba gratuita de 30 días
+                        <i class="fas fa-check me-2 ms-3"></i>Sin tarjeta de crédito
+                    </small>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center">
+                <div class="hero-image">
+                    <i class="fas fa-tennis-ball" style="font-size: 15rem; opacity: 0.3; color: white;"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section id="features" class="py-5">
+    <div class="container">
+        <div class="row text-center mb-5">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="display-5 fw-bold mb-3">¿Por qué elegir TennisManager?</h2>
+                <p class="lead text-muted">
+                    Nuestra plataforma combina tecnología avanzada con simplicidad de uso para
+                    revolucionar la gestión de tu club de tenis.
+                </p>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card text-center">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h4 class="mb-3">Reservas Inteligentes</h4>
+                    <p class="text-muted">
+                        Sistema de reservas automatizado con calendario interactivo,
+                        notificaciones y gestión de disponibilidad en tiempo real.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card text-center">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h4 class="mb-3">Gestión de Usuarios</h4>
+                    <p class="text-muted">
+                        Administra miembros, instructores y visitantes con perfiles completos,
+                        historial de juego y sistema de membresías.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card text-center">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h4 class="mb-3">Analytics Avanzados</h4>
+                    <p class="text-muted">
+                        Reportes detallados de ocupación, ingresos, usuarios más activos
+                        y tendencias para optimizar tu negocio.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card text-center">
+                    <div class="feature-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h4 class="mb-3">Pagos Integrados</h4>
+                    <p class="text-muted">
+                        Procesa pagos de forma segura con múltiples métodos,
+                        facturación automática y gestión de cuotas.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card text-center">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h4 class="mb-3">App Móvil</h4>
+                    <p class="text-muted">
+                        Aplicación nativa para iOS y Android que permite a tus usuarios
+                        reservar canchas desde cualquier lugar.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card text-center">
+                    <div class="feature-icon">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <h4 class="mb-3">API Completa</h4>
+                    <p class="text-muted">
+                        Integra TennisManager con tus sistemas existentes usando
+                        nuestra API REST completa y bien documentada.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section id="stats" class="stats-section">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-3 col-md-6">
+                <div class="stat-item">
+                    <span class="stat-number" id="courts-count">500+</span>
+                    <h5>Canchas Gestionadas</h5>
+                    <p class="text-muted">En más de 50 países</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="stat-item">
+                    <span class="stat-number" id="users-count">10K+</span>
+                    <h5>Usuarios Activos</h5>
+                    <p class="text-muted">Jugadores satisfechos</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="stat-item">
+                    <span class="stat-number" id="bookings-count">1M+</span>
+                    <h5>Reservas Procesadas</h5>
+                    <p class="text-muted">Este año</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="stat-item">
+                    <span class="stat-number">99.9%</span>
+                    <h5>Uptime</h5>
+                    <p class="text-muted">Disponibilidad garantizada</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- API Section -->
+<section id="api" class="api-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h2 class="display-6 fw-bold mb-4">API REST Potente y Flexible</h2>
+                <p class="lead mb-4">
+                    Integra TennisManager con cualquier sistema usando nuestra API REST.
+                    Documentación completa, ejemplos de código y soporte técnico incluido.
+                </p>
+
+                <div class="row g-3 mb-4">
+                    <div class="col-6">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <span>Autenticación JWT</span>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <span>Rate Limiting</span>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <span>Webhooks</span>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <span>SDKs Oficiales</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex gap-3">
+                    <a href="/health" class="btn btn-primary" target="_blank">
+                        <i class="fas fa-heartbeat me-2"></i>Probar API
+                    </a>
+                    <a href="#" class="btn btn-outline-primary">
+                        <i class="fas fa-book me-2"></i>Documentación
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="code-block">
+                    <div class="mb-3">
+                        <small class="text-muted">Ejemplo: Obtener usuarios</small>
+                    </div>
+<pre><code>curl -X GET "http://localhost:5001/api/users" \
+  -H "Authorization: Bearer YOUR_TOKEN" \
+  -H "Content-Type: application/json"
+
+{
+  "success": true,
+  "message": "Se encontraron 3 usuarios",
+  "data": [
+    {
+      "id": 1,
+      "username": "eidan",
+      "email": "eidan@example.com",
+      "notes_count": 3
+    }
+  ]
+}</code></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-5 bg-primary text-white">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="display-6 fw-bold mb-3">¿Listo para revolucionar tu club de tenis?</h2>
+                <p class="lead mb-4">
+                    Únete a cientos de clubes que ya confían en TennisManager para gestionar sus operaciones diarias.
+                </p>
+                <div class="d-flex flex-wrap justify-content-center gap-3">
+                    <a href="#contact" class="btn btn-light btn-lg">
+                        <i class="fas fa-rocket me-2"></i>Comenzar Prueba Gratuita
+                    </a>
+                    <a href="#" class="btn btn-outline-light btn-lg">
+                        <i class="fas fa-calendar me-2"></i>Solicitar Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="display-6 fw-bold mb-3">Contáctanos</h2>
+                <p class="lead mb-5">
+                    ¿Tienes preguntas? Nuestro equipo está aquí para ayudarte a encontrar la mejor solución para tu club.
+                </p>
+
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <div class="feature-icon mx-auto mb-3" style="width: 60px; height: 60px;">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h5>Email</h5>
+                            <p class="text-muted">info@tennismanager.com</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <div class="feature-icon mx-auto mb-3" style="width: 60px; height: 60px;">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <h5>Teléfono</h5>
+                            <p class="text-muted">+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <div class="feature-icon mx-auto mb-3" style="width: 60px; height: 60px;">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <h5>Chat en Vivo</h5>
+                            <p class="text-muted">Disponible 24/7</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    // Animación de números en las estadísticas
+    function animateNumbers() {
+        const counters = document.querySelectorAll('.stat-number');
+
+        counters.forEach(counter => {
+            const target = parseInt(counter.textContent.replace(/[^\d]/g, ''));
+            const increment = target / 100;
+            let current = 0;
+
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+
+                if (counter.id === 'courts-count') {
+                    counter.textContent = Math.floor(current) + '+';
+                } else if (counter.id === 'users-count') {
+                    counter.textContent = Math.floor(current / 1000) + 'K+';
+                } else if (counter.id === 'bookings-count') {
+                    counter.textContent = Math.floor(current / 1000000) + 'M+';
+                } else {
+                    counter.textContent = Math.floor(current) + '%';
+                }
+            }, 20);
+        });
+    }
+
+    // Ejecutar animación cuando la sección sea visible
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateNumbers();
+                observer.unobserve(entry.target);
+            }
+        });
+    });
+
+    observer.observe(document.querySelector('#stats'));
+
+    // Smooth scrolling para los enlaces de navegación
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+</script>
+{% endblock %}
